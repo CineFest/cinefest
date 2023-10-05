@@ -1,26 +1,35 @@
 
-Cinefest - Open Source Film Festival Management System
-Cinefest is a web application that helps film festivals manage their submissions, screenings, and awards. It is built on a modern stack of technologies, including:
+# Cinefest - Open Source Film Festival Management System
 
-Next.js: A React framework that makes it easy to build fast and scalable web applications.
-Prisma: A database abstraction layer that makes it easy to work with relational databases.
-Tailwind CSS: A utility-first CSS framework that makes it easy to style your application.
-React Query: A state management library that makes it easy to cache data and improve performance.
-TRPC: A GraphQL client library that makes it easy to consume GraphQL APIs.
-Cinefest is designed to be easy to use and customize. It comes with a number of features out of the box, including:
+Cinefest is a versatile web application designed to assist film festivals in managing submissions, screenings, and awards efficiently. It utilizes a modern technology stack, including:
 
-A submission management system that allows filmmakers to submit their films to the festival.
-A screening management system that allows festival organizers to schedule and manage screenings.
-An awards management system that allows festival organizers to create and manage awards categories and winners.
-A user management system that allows festival organizers to create and manage user accounts.
-Cinefest is also highly extensible. You can easily add new features and functionality by creating custom plugins.
+- **Next.js**: A React framework for building fast and scalable web applications.
+- **Prisma**: A database abstraction layer for seamless interaction with relational databases.
+- **Tailwind CSS**: A utility-first CSS framework for effortless styling of your application.
+- **React Query**: A state management library for data caching and improved performance.
+- **TRPC**: A GraphQL client library for simplified consumption of GraphQL APIs.
 
-If you are looking for an open source film festival management system, Cinefest is a great option. It is easy to use, extensible, and built on a modern stack of technologies.
+Cinefest offers a user-friendly and customizable interface and comes with a set of built-in features, including:
 
-Getting Started
-To get started with Cinefest, you can clone the repository and install the dependencies:
+- A submission management system allowing filmmakers to submit their films to the festival.
+- A screening management system for scheduling and overseeing screenings.
+- An awards management system enabling organizers to create and manage award categories and winners.
+- A user management system for creating and managing user accounts.
 
-git clone https://github.com/YOUR_USERNAME/cinefest.git
+Cinefest is highly extensible, allowing you to easily introduce new features and functionality through custom plugins.
+
+If you're seeking an open-source film festival management system, Cinefest is an excellent choice. It's user-friendly, adaptable, and built on a modern technology stack.
+
+## Getting Started
+
+To begin using Cinefest, follow these steps:
+
+1. Clone the repository:
+   ```shell
+   git clone https://github.com/YOUR_USERNAME/cinefest.git
+   cd cinefest
+
+
 cd cinefest
 npm install
 Once the dependencies are installed, you can start the development server:
