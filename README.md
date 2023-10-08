@@ -1,52 +1,34 @@
+### Next.js with TypeScript, MongoDB, HttpReact, TailwindCSS and DaisyUI
 
-# Cinefest - Open Source Film Festival Management System
+A Next.js app with a serverless backend using MongoDB. A template that can be used to quickly bootstrap new Next.js project. It also has Tailwind configured with Postcss and DaisyUI
 
-Cinefest is a versatile web application designed to assist film festivals in managing submissions, screenings, and awards efficiently. It utilizes a modern technology stack, including:
+Clone/(Download as zip) this repo, then:
 
-- **Next.js**: A React framework for building fast and scalable web applications.
-- **Prisma**: A database abstraction layer for seamless interaction with relational databases.
-- **Tailwind CSS**: A utility-first CSS framework for effortless styling of your application.
-- **React Query**: A state management library for data caching and improved performance.
-- **TRPC**: A GraphQL client library for simplified consumption of GraphQL APIs.
+`npm install`
 
-Cinefest offers a user-friendly and customizable interface and comes with a set of built-in features, including:
+or
 
-- A submission management system allowing filmmakers to submit their films to the festival.
-- A screening management system for scheduling and overseeing screenings.
-- An awards management system enabling organizers to create and manage award categories and winners.
-- A user management system for creating and managing user accounts.
+`yarn install`
 
-Cinefest is highly extensible, allowing you to easily introduce new features and functionality through custom plugins.
+When starting the dev server, pass an env. variable with the URI for the MongoDB connection.
 
-If you're seeking an open-source film festival management system, Cinefest is an excellent choice. It's user-friendly, adaptable, and built on a modern technology stack.
+`MONGO_URI="my-mongodb-uri" npm run dev`
 
-## Getting Started
+You can also place that variable inside a `.ENV` file (don't forget to add it to your `.gitignore` file)
 
-To begin using Cinefest, follow these steps:
+Since serverless doesn't save variables after an api call, you need to create the connection inside each request if it's not created yet, you can do this by calling the function `connectToDatabase` that is inside utils.
 
-1. Clone the repository:
-   ```shell
-   git clone https://github.com/YOUR_USERNAME/cinefest.git
-   cd cinefest
+And you are ready to go:)
+
+(It has an example using Typescript with Mongoose models in the api handlers).
+
+---
+
+I created three of the libraries used in this project:
+
+[`http-react`](https://http-react.netlify.app/): React hooks for Data fetching
+[`react-kuh`](https://www.npmjs.com/package/react-kuh): TypeScript-ready React (kinda) useful hooks
+[`next-api-validation`](https://www.npmjs.com/package/next-api-validation): Validate HTTP requests inside Next.js API endpoints
 
 
-cd cinefest
-npm install
-Once the dependencies are installed, you can start the development server:
-
-npm run dev
-The development server will start on port 3000. You can visit http://localhost:3000 in your browser to see the Cinefest application.
-
-Contributing
-Cinefest is an open source project, and we welcome contributions from everyone. If you have any ideas for new features or improvements, please feel free to open an issue or submit a pull request.
-
-License
-Cinefest is licensed under the MIT License.
-
-Community
-If you have any questions or need help with Cinefest, please join our Discord server:
-
-[Discord link]
-
-Thanks
-Thank you to everyone who has contributed to Cinefest. We are grateful for your support!
+[Live preview](https://nextjs-typescript-and-mongodb-psi.vercel.app)
